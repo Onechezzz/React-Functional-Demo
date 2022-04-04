@@ -4,7 +4,7 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 const PostList = ({ posts, title, remove }) => {
   if (!posts.length) {
-    return <h1 style={{ textAlign: "center" }}>Список постов пуст</h1>;
+    return <h1 style={{ textAlign: "center" }}>Пости відсутні</h1>;
   }
 
   return (

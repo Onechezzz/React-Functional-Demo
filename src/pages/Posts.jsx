@@ -50,7 +50,7 @@ function Posts() {
     <div className="App">
       {/* <button onClick={fetchPosts}>Get posts</button> */}
       <MyButton style={{ marginTop: "30px" }} onClick={() => setModal(true)}>
-        Создать пост
+        Створити пост
       </MyButton>
       <MyModal visible={modal} setVisible={setModal}>
         <PostForm create={createPost} />
@@ -58,7 +58,7 @@ function Posts() {
 
       <hr style={{ margin: "15px 0" }} />
       <PostFilter filter={filter} setFilter={setFilter} />
-      {postError && <h2>Произошла ошибка ${postError}</h2>}
+      {postError && <h2>Сталася помилка ${postError}</h2>}
       {isPostsLoading ? (
         <div
           style={{
@@ -73,7 +73,7 @@ function Posts() {
         <PostList
           remove={removePost}
           posts={sortedAndSearchedPosts}
-          title="Список постов 1"
+          title="Список постів 1"
         />
       )}
       <Pagination page={page} changePage={changePage} totalPages={totalPages} />
